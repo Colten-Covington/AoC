@@ -1,0 +1,25 @@
+{
+  "name": "adventofcode2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "code-runner.runInTerminal": true,
+  "jshintConfig": {
+    "esversion": 9,
+    "node": true,
+    "asi": true,
+    "sub": true
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^6.2.5",
+    "promise-path": "^1.4.0"
+  }
+}
