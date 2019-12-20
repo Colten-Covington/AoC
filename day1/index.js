@@ -1,14 +1,14 @@
 const Read = require('../lib/read-file.js')
 let read = new Read('input.txt')
 
-readlines(read.openFile('input.1.txt'))
+readlines(read.openFile('input.txt'))
 async function readlines (io) {
     let sum = 0;
     let lastChunk = 0
     if (io) {
         for await (const chunk of io) {
             //change function name from CalcFuel to Getfuel for p2
-            for (const val of Getfuel(chunk,lastChunk)) {
+            for (const val of CalcFuel(chunk,lastChunk)) {
                 sum += val
             }
             console.log(`Getting total mass for ${chunk} ${sum}`)
